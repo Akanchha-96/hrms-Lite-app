@@ -10,7 +10,7 @@ function EmployeeForm({refresh}){
 
     const handleSubmit=async(e)=>{
         e.preventDefault();
-        await axios.post("http://localhost:5000/employees",{
+        await axios.post("https://hrms-lite-app-2.onrender.com/employees",{
             employee_id:employeeId,
             full_name:full_name,
             email:email,

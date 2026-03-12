@@ -12,7 +12,7 @@ function Employees(){
     const loadEmployees=async()=>{
         try{
             setLoading(true);
-            const response=await axios.get("http://localhost:5000/employees");
+            const response=await axios.get("https://hrms-lite-app-2.onrender.com/employees");
             setEmployees(response.data);
             setError("");
         }catch(err){
