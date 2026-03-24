@@ -1,7 +1,7 @@
 
 import {BrowserRouter as Router,Routes,Route,Link} from "react-router-dom";
 import Employees from './pages/Employees';
-import Attendance from './pages/attendance';
+import Attendance from "./pages/attendance";
 
 function App() {
   return (
