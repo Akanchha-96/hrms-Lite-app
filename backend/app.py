@@ -5,7 +5,7 @@ from employee_routes import employee_bp
 from attendance_routes import attendance_bp
 
 app=Flask(__name__)
-CORS(app)
+CORS(app, origins=["*"], supports_credentials=True)
 
 app.register_blueprint(employee_bp)
 app.register_blueprint(attendance_bp)
