@@ -28,7 +28,7 @@ function AttendanceForm(){
             </select>
             
 
-            <button>Mark Attendance</button>
+            <button type="submit">Mark Attendance</button>
         </form>
     )
 }
