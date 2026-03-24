@@ -16,7 +16,6 @@ function EmployeeForm({refresh}){
             email:email,
             department:department
         });
-        refresh();
     };
     return(
         <form className="form" onSubmit={handleSubmit}>
