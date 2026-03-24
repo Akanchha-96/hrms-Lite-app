@@ -2,7 +2,7 @@ from flask import Blueprint,request,jsonify
 from db import get_db_connection
 from utils.validator import validate_email,validate_fields
 
-employee_bp=Blueprint('employees',__name__)
+employee_bp=Blueprint('employees',__name__,url_prefix="/api")
 
 @employee_bp.route('/employees',methods=['GET'])
 def getEmployees():

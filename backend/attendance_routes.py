@@ -2,7 +2,7 @@ from flask import Blueprint,request,jsonify
 from db import get_db_connection
 from utils.validator import validate_email,validate_fields
 
-attendance_bp=Blueprint('attendance',__name__)
+attendance_bp=Blueprint('attendance',__name__,url_prefix="/api")
 
 @attendance_bp.route('/attendance',methods=['POST'])
 def markAttendance():
