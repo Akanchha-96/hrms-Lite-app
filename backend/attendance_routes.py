@@ -29,7 +29,7 @@ def markAttendance():
         cursor=con.cursor()
 
         cursor.execute(
-            "select * from employee where employee_id=%s",
+            "select * from employees where employee_id=%s",
             (data["employee_id"],)
         )
 
